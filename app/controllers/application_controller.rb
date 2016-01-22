@@ -4,6 +4,6 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
 
   def hola
-  	render text: "#{'\u00a1'.encode('utf-8')}Hola, mundo!"
+  	render text: "\u{00a1}Hola, mundo!"
   end
 end
