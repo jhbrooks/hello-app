@@ -3,7 +3,7 @@ class ApplicationController < ActionController::Base
   # For APIs, you may want to use :null_session instead.
   protect_from_forgery with: :exception
 
-  def hello
-  	render text: "hello, world!"
+  def hola
+  	render text: "#{'\u00a1'.encode('utf-8')}Hola, mundo!"
   end
 end
